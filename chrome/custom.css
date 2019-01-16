@@ -1,0 +1,11 @@
+/*
+ Launch the inspector by using cmd + alt + shift + I
+ Requires the following inspector settings to be enabled:
+    "Enable browser chrome and add-on debugging toolboxes"
+    "Enable remote debugging"
+ */
+
+/* Add a border below the navigator toolbox */
+#navigator-toolbox {
+    border-bottom: 1px solid #ddd;
+}
