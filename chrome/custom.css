@@ -9,3 +9,8 @@
 #navigator-toolbox {
     border-bottom: 1px solid #ddd;
 }
+
+/* Hide bookmarks toolbar favicons */
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+    display: none;
+}
