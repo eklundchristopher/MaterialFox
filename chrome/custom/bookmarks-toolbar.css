@@ -1,0 +1,6 @@
+/* Hide bookmarks toolbar favicons */
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #personal-bookmarks .bookmark-item .toolbarbutton-icon {
+        display: none;
+    }
+}

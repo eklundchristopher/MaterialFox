@@ -1,65 +1,13 @@
 /*
  Launch the inspector by using cmd + alt + shift + I
+ 
  Requires the following inspector settings to be enabled:
     "Enable browser chrome and add-on debugging toolboxes"
     "Enable remote debugging"
  */
 
-/* Add a border below the navigator toolbox */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #navigator-toolbox {
-        border-bottom: 1px solid #ddd;
-    }
-}
-
-/* Hide bookmarks toolbar favicons */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #personal-bookmarks .bookmark-item .toolbarbutton-icon {
-        display: none;
-    }
-}
-
-/* Hide extension context menu items */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #contentAreaContextMenu menuseparator:last-of-type,
-    #contentAreaContextMenu menuseparator:last-of-type ~ .menuitem-iconic {
-        display: none;
-    }
-}
-
-/** Change the sidebar background color */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #sidebar-box,
-    #sidebar-box #sidebar-header {
-        background-color: #fff !important;
-    }
-}
-@-moz-document url(chrome://browser/content/places/bookmarksSidebar.xul) {
-    #bookmarksPanel,
-    #bookmarks-view .tree-stack {
-        background-color: #fff !important;
-        padding: 10px;
-    }
-}
-@-moz-document url(chrome://browser/content/places/historySidebar.xul) {
-    #history-panel,
-    #historyTree .tree-stack {
-        background-color: #fff !important;
-        padding: 10px;
-    }
-}
-@-moz-document url(chrome://browser/content/syncedtabs/sidebar.xhtml) {
-    .content-header,
-    #template-container {
-        background-color: #fff !important;
-        padding: 10px;
-    }
-}
-
-/* Search results */
-@-moz-document url(chrome://browser/content/browser.xul) {
-    #PopupAutoCompleteRichResult,
-    #PopupSearchAutoComplete {
-
-    }
-}
+@import "custom/navigator-toolbox.css";
+@import "custom/bookmarks-toolbar.css";
+@import "custom/context-menu.css";
+@import "custom/sidebar.css";
+@import "custom/search-results.css";

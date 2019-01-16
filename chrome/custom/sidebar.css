@@ -1,0 +1,31 @@
+/** Change the sidebar background color */
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #sidebar-box,
+    #sidebar-box #sidebar-header {
+        background-color: #fff !important;
+    }
+}
+
+@-moz-document url(chrome://browser/content/places/bookmarksSidebar.xul) {
+    #bookmarksPanel,
+    #bookmarks-view .tree-stack {
+        background-color: #fff !important;
+        padding: 10px;
+    }
+}
+
+@-moz-document url(chrome://browser/content/places/historySidebar.xul) {
+    #history-panel,
+    #historyTree .tree-stack {
+        background-color: #fff !important;
+        padding: 10px;
+    }
+}
+
+@-moz-document url(chrome://browser/content/syncedtabs/sidebar.xhtml) {
+    .content-header,
+    #template-container {
+        background-color: #fff !important;
+        padding: 10px;
+    }
+}

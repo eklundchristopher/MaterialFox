@@ -1,0 +1,7 @@
+/* Hide extension context menu items */
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #contentAreaContextMenu menuseparator:last-of-type,
+    #contentAreaContextMenu menuseparator:last-of-type ~ .menuitem-iconic {
+        display: none;
+    }
+}

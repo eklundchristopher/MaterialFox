@@ -1,0 +1,6 @@
+/* Add a border below the navigator toolbox */
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #navigator-toolbox {
+        border-bottom: 1px solid #ddd;
+    }
+}

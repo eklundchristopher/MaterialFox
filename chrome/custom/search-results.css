@@ -1,0 +1,7 @@
+/* Search results */
+@-moz-document url(chrome://browser/content/browser.xul) {
+    #PopupAutoCompleteRichResult,
+    #PopupSearchAutoComplete {
+
+    }
+}
